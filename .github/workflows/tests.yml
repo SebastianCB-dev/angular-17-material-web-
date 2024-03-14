@@ -1,0 +1,27 @@
+name: Test
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v3
+
+      - name: Node.JS Setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Execute tests
+        run: pnpm test

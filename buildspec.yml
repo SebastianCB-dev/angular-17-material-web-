@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo Installing source NPM dependencies...
+      # Install Angular CLI and PNPM    
+      - npm install -g @angular/cli@17.0.3 pnpm@8.10.2
+      # Install NPM dependencies
+      - pnpm install
+  build:
+    commands:
+      - echo Build started
+      # Build the Angular app with PNPM and the appropiate environment
+      - pnpm build:$BUILD_ENV
+  post_build:
+    commands:
+      - aws s3 sync dist/<project-name> s3://$BUCKET_NAME --delete
+      - echo Build completed

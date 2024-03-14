@@ -1,27 +1,60 @@
-# Angular17MaterialWeb
+# Angular 17 Starter Project with PrimeNG and SASS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+Welcome to our Angular 17 starter project! This repository serves as the starting point for building Angular applications using Angular 17, Node 20, pnpm, PrimeNG, and SASS.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To get started with this project, follow these steps:
 
-## Code scaffolding
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your_username/your_project.git
+   ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. **Navigate to the project directory:**
+   ```bash
+   cd your_project
+   ```
 
-## Build
+3. **Install dependencies using pnpm:**
+   ```bash
+   pnpm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. **Run the development server:**
+   ```bash
+   pnpm start
+   ```
 
-## Running unit tests
+   This command will compile the project and start a development server. Navigate to `http://localhost:4200/` in your browser to view the application.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Project Structure
 
-## Running end-to-end tests
+The project structure is as follows:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **`src/`**: Contains the source code for the Angular application.
+- **`src/app/`**: Contains the components, services, modules, and other Angular-related files.
+- **`src/assets/`**: Contains static assets such as images, fonts, and stylesheets.
+- **`src/styles.scss`**: Main SASS stylesheet file.
+- **`angular.json`**: Angular CLI configuration file.
+- **`package.json`**: Node package manager configuration file.
+- **`pnpm-lock.yaml`**: pnpm lockfile, ensuring consistent dependencies.
+- **`README.md`**: This file, containing information about the project.
 
-## Further help
+## Dependencies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project utilizes the following major dependencies:
+
+- **Angular 17**: A platform and framework for building single-page client applications using HTML and TypeScript.
+- **Node.js 20**: JavaScript runtime built on Chrome's V8 JavaScript engine for server-side development.
+- **pnpm**: Fast, disk space-efficient package manager.
+- **PrimeNG**: UI component library for Angular, offering a rich set of components.
+- **SASS**: Syntactically Awesome Style Sheets, extending CSS with variables, nesting, and more.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

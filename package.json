@@ -1,6 +1,12 @@
 {
   "name": "angular-17-primeng",
   "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "Joan Sebastián Carrillo Barón",
+      "email": "carrillobaronj@gmail.com"      
+    }
+  ],
   "scripts": {
     "build:production": "ng build --configuration production --aot --build-optimizer --source-map=false",
     "build:staging": "ng build --configuration development --aot --build-optimizer --source-map=true",
